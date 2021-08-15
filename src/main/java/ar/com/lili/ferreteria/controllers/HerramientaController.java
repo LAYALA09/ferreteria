@@ -31,7 +31,7 @@ public class HerramientaController {
         respuesta.message = "Herramienta creada con exito";
 
         // front se le devuelven HTTP STATUS CODE
-        // 200: TODO OK
+        // 200: TODO OK:  status generico de que todo salio ok
         // 201: Created (creado)
         // 400: BAD REQUEST(Solicitud invalida)
         // 401: Not Authorized, No autorizado
