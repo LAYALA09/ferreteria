@@ -33,7 +33,7 @@ public class HerramientaController {
         // front se le devuelven HTTP STATUS CODE
         // 200: TODO OK:  status generico de que todo salio ok
         // 201: Created (creado)
-        // 400: BAD REQUEST(Solicitud invalida)
+        // 400: BAD REQUEST(Solicitud invalida)//para verificar
         // 401: Not Authorized, No autorizado
         // 403: Forbidden prohibido
         // 500: Internal server error: se rompio todo en el backend.
