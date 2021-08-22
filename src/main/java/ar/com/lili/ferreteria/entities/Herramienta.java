@@ -1,13 +1,14 @@
 package ar.com.lili.ferreteria.entities;
 
 import javax.persistence.*;
-
 @Entity
 @Table(name = "herramienta") /// le digo que este objeto Herramienta va a la tabla "herammienta2"
+
 public class Herramienta {
 
     @Id // Es un id, una PK
     @GeneratedValue(strategy = GenerationType.IDENTITY) // que es autoincremental
+
     @Column(name = "herramienta_id") // avisa que en la DB, se llama diferente
     public Integer herramientaId;
 
