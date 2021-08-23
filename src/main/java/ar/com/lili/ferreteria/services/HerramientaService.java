@@ -24,4 +24,10 @@ public class HerramientaService { //negocio, capa SERVICE
     public List<Herramienta> buscarTodas(){
         return repo.findAll(); //find ALL=> buscar todas
     }
+    public Herramienta buscarPorId(Integer id) {
+        
+        return repo.findByHerramientaId(id);
+        //repo.getById(id);
+        //repo.findById(arg0)
+    }
 }

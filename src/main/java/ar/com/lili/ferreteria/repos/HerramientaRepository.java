@@ -7,5 +7,9 @@ import ar.com.lili.ferreteria.entities.Herramienta;
 
 @Repository
 public interface HerramientaRepository extends JpaRepository<Herramienta, Integer> {
+    //este metod de esta interface 
+    //al escribirlo de esta manera
+    //genera un SELECT * from herramienta where herramienta_id = :herramientaId
+    Herramienta findByHerramientaId(Integer herramientaId);
     
 }

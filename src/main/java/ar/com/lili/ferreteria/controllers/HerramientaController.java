@@ -50,4 +50,22 @@ public class HerramientaController {
 
         return ResponseEntity.ok(lista);
     }
+    //Enpoint que devuelve info de una herramienta usando su identificacion
+    //ej GET /herramientas/5   trae info de la herramienta id: 5
+    // GET /herramientas/20 trae la info de la id: 20
+    @GetMapping("/herramientas/{id}") //en este caso {id} es el ID que ira variando. Se lo conoce como PathVariable
+    public ResponseEntity<Herramienta> getHerramientaPorId(@PathVariable Integer id){ //id es esta con PathVarible porque esta dentro de la ruta(PATH)
+
+        Herramienta herramienta = service.buscarPorId(id); //busco la herramienta a traves del service.
+
+        if (herramienta != null){ //encontre la herramienta
+            return ResponseEntity.ok(herramienta); //devuelvo un Ok con la herramienta encontrada
+        }
+        else { //devolver HTTP STATUS 404: Not Found / No encontrado
+            return ResponseEntity.notFound().build();
+        }
+    } 
+
+    //Endpoint que modifica una herramienta
+
 }
